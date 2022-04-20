@@ -1,4 +1,18 @@
 {
+    // Environment style
+    "workbench.colorTheme": "Panda Syntax",
+    "editor.renderWhitespace": "boundary",
+    "markdown.styles": [
+        ".devcontainer/markdown-styles.css"
+    ],
+    // Git behaviour
+    "git.autofetch": true,
+    "git.autofetchPeriod": 60,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": true,
+    // Terminal behaviour
+    "terminal.integrated.defaultProfile.windows": "/bin/bash (migrated)",
+    // Java behaviour
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
