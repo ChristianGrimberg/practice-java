@@ -5,6 +5,7 @@ import java.util.Date;
 public class Alumno {
     public Alumno() {
         nombre = "Hola Mundo!";
+        numeroDocumento = 0;
     }
 
     int numeroDocumento;
@@ -14,7 +15,7 @@ public class Alumno {
     boolean activo;
 
     public void imprimirAtributos() {
-        System.out.println(numeroDocumento + " " + nombre);
+        System.out.println("ATRIBUTOS: [" + numeroDocumento + "] [" + nombre + "]");
     }
 
     public void activar() {
