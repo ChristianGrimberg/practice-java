@@ -4,15 +4,18 @@ import java.util.Date;
 
 public class Alumno {
     public Alumno() {
-        nombre = "Hola Mundo!";
+        nombre = "Hola";
         numeroDocumento = 0;
+        apellido = "Mundo";
+        fechaNacimiento = new Date();
+        activo = false;
     }
 
-    int numeroDocumento;
-    String nombre;
-    String apellido;
-    Date fechaNacimiento;
-    boolean activo;
+    private int numeroDocumento;
+    private String nombre;
+    private String apellido;
+    private Date fechaNacimiento;
+    private boolean activo;
 
     public void imprimirAtributos() {
         System.out.println("ATRIBUTOS: [" + numeroDocumento + "] [" + nombre + "]");
@@ -27,6 +30,6 @@ public class Alumno {
     }
 
     public String nombreMayuscula() {
-        return nombre.toUpperCase();
+        return (nombre.toUpperCase() + " " + apellido.toUpperCase() + "!");
     }
 }
